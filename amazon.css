@@ -542,7 +542,7 @@ body{
     font-size: 0.8rem;
 }
 .more:hover{
-    text-decoration: underline;
+    text-decoration: underline; 
     color: red;
 }
 .box_sec-1{
@@ -733,7 +733,7 @@ body{
 }
 .product-19{
     height: 270px;
-    width: 100%;
+    width: 270px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -794,7 +794,7 @@ body{
 }
 .item_box-9{
     display: none;
-    width: 23%;
+    width: 310px;
     height: 420px;
     background-color: white;
     margin-top: 10px;
