@@ -37,6 +37,9 @@ let Popup3 = document.querySelector(".popup-3");
 let LanSelect = document.querySelector(".lan_select");
 let ChangeLangFoot = document.querySelector(".change_lang_foot");
 let InfoLan = document.querySelector(".info_lan");
+let BackLeft = document.querySelector(".back_left");
+let BackRight = document.querySelector(".back_right");
+let BackGroundImage = document.querySelector(".background_image");
 
 All.addEventListener("click", () => {
   All.style.border = "3px solid rgb(242, 155, 5)";
@@ -231,5 +234,30 @@ SecondRight.addEventListener("click", () => {
   if (x2 < 250) {
     MainBox2.scrollTo(x2 + 300, 0);
     x2 += 300;
+  }
+});
+let j = 0;
+BackRight.addEventListener("click", () => {
+  if (j >= 6) {
+    j = 0;
+    let xcoordinate = j * 1520;
+    BackGroundImage.scrollTo(xcoordinate, 0);
+    j++;
+  } else {
+    let xcoordinate = j * 1520;
+    BackGroundImage.scrollTo(xcoordinate, 0);
+    j++;
+  }
+});
+BackLeft.addEventListener("click", () => {
+  if (j < 0) {
+    j = 5;
+    let xcoordinate = j * 1520;
+    BackGroundImage.scrollTo(xcoordinate, 0);
+    j--;
+  } else {
+    let xcoordinate = j * 1520;
+    BackGroundImage.scrollTo(xcoordinate, 0);
+    j--;
   }
 });

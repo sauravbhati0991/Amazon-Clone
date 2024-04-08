@@ -822,18 +822,15 @@ body {
   height: 600px;
   margin-left: 0.5%;
   margin-right: 0.5%;
-  background-image: url("img/background_img1.jpg");
-  background-size: cover;
   position: absolute;
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
-.image_fade {
-  height: 600px;
-  width: 100%;
-  background-image: linear-gradient(
-    to top,
-    rgba(227, 230, 230, 255),
-    rgba(255, 255, 255, 0) 60%
-  );
+#back_img {
+  height: 620px;
+  max-width: 100%;
+  mask-image: linear-gradient(to top, transparent, rgb(227, 230, 230) 60%);
 }
 .back_left {
   height: 250px;
@@ -1115,7 +1112,7 @@ body {
 }
 .product-19 {
   height: 270px;
-  width: 270px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
