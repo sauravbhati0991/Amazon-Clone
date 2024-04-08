@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon</title>
+    <link rel="icon" href="img/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,8 +14,48 @@
     />
     <link rel="stylesheet" href="amazon.css" />
   </head>
-
   <body>
+    <div class="change_Add">
+      <div class="change_add"></div>
+      <div class="change_add_box">
+        <div class="add_box-1">
+          <p id="add_box-1_para">Choose your location</p>
+        </div>
+        <div class="add_box-2">
+          <div class="main_add_box-2">
+            <p>
+              Delivery options and delivery speeds may vary for different
+              locations
+            </p>
+            <button class="see_add">Sign in to see your address</button>
+            <div id="para_deco">
+              <div id="line_deco"></div>
+              <p id="add_box-2_para">or enter a US zip code</p>
+            </div>
+            <div class="zip_code">
+              <input type="text" class="input_city" />
+              <button class="Apply_add">Apply</button>
+            </div>
+            <div class="error">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>Please enter a valid US zip code</p>
+            </div>
+            <div id="para_deco">
+              <div id="line_deco"></div>
+              <p id="add_box-2_para">or</p>
+            </div>
+            <div class="Select_city">
+              <p id="findCity">Ship outside the US</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="add_box-3">
+          <div class="Done_add">Done</div>
+        </div>
+      </div>
+      <div class="city_names"><div style="margin-top: 5400px"></div></div>
+    </div>
     <header>
       <nav class="navbar">
         <div class="first_bar">
@@ -47,6 +88,107 @@
             </div>
           </div>
           <div class="box-3">
+            <div class="popup-1">
+              <div class="popup_t popup_lan"></div>
+              <div class="pop_main">
+                <div class="Change_lan">
+                  <p>Change language</p>
+                  <a href="" class="learn_more">Learn more</a>
+                </div>
+                <div class="lan_option">
+                  <label for="lan" class="lan">
+                    <input type="radio" value="EN" name="lan" id="lan" />
+                    English - EN
+                  </label>
+                  <div id="hori_line"></div>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="ES" name="lan" id="lan" />
+                    español - ES
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="AR" name="lan" id="lan" />
+                    العربية - AR
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="DE" name="lan" id="lan" />
+                    Deutsch - DE
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="HE" name="lan" id="lan" />
+                    עברית- HE
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="KO" name="lan" id="lan" />
+                    한국어 -KO
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="PT" name="lan" id="lan" />
+                    português - PT
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="ZH" name="lan" id="lan" />
+                    中文 (简体) - ZH
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="ZH" name="lan" id="lan" />
+                    中文 (繁體) - ZH
+                  </label>
+                  <div id="hori_line"></div>
+                </div>
+                <div class="Change_lan">
+                  <p>Change currency</p>
+                  <a href="" class="learn_more">Learn more</a>
+                </div>
+                <div class="Change_lan">
+                  <p class="currency_para">$ - USD - US Dollar</p>
+                  <a href="" class="Change">Change</a>
+                </div>
+                <div id="hori_line"></div>
+                <div class="summary">
+                  <div class="main_summary">
+                    <div class="language-icon"></div>
+                    <p id="lan_contry">You are shopping on</p>
+                  </div>
+                  <p>Amazon.com</p>
+                </div>
+                <div class="change_region">Change country/region.</div>
+              </div>
+            </div>
+            <div class="popup-2">
+              <div class="popup_t popup_sign"></div>
+              <div class="pop2_main">
+                <div class="popup_top">
+                  <div class="sign_btn">Sign in</div>
+                  <div class="new">
+                    <p class="new_coustomer">New customer?</p>
+                    <a href="" class="start_here">Start here.</a>
+                  </div>
+                </div>
+                <div id="hori_line"></div>
+                <div class="popup_bottom">
+                  <div class="pop_left">
+                    <h3 class="pop_head">Your Lists</h3>
+                    <p class="pop_para">Create a List</p>
+                    <p class="pop_para">Find a List or Registry</p>
+                  </div>
+                  <div class="ver_line"></div>
+                  <div class="pop_right">
+                    <h3 class="pop_head">Your Account</h3>
+                    <p class="pop_para">Account</p>
+                    <p class="pop_para">Orders</p>
+                    <p class="pop_para">Recommendations</p>
+                    <p class="pop_para">Browsing History</p>
+                    <p class="pop_para">Watchlist</p>
+                    <p class="pop_para">Video Purchases & Rentals</p>
+                    <p class="pop_para">Kindle Unlimited</p>
+                    <p class="pop_para">Content & Devices</p>
+                    <p class="pop_para">Subscribe & Save Items</p>
+                    <p class="pop_para">Memberships & Subscriptions</p>
+                    <p class="pop_para">Music Library</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="popup">
               <div class="popup_t"></div>
               <div class="popup_s">
@@ -59,7 +201,7 @@
             </div>
             <div class="language-select border">
               <div class="language-icon"></div>
-              <p>EN</p>
+              <p id="lan_code">EN</p>
               <i class="fa-solid fa-caret-down"></i>
             </div>
             <div class="sign-in border">
@@ -101,6 +243,7 @@
     </header>
     <main>
       <div class="box-6">
+        <div class="change_lang"></div>
         <div class="background_image">
           <div class="image_fade"></div>
         </div>
@@ -379,55 +522,56 @@
           <div class="main_scroll_bar">
             <h2 class="item_heading-1">Best Sellers in Toys & Games</h2>
             <div class="scroll_box">
-              <div class="main_scroll_box">
-                <div class="product-28" id="scroll_product"></div>
-                <div class="product-29" id="scroll_product"></div>
-                <div class="product-30" id="scroll_product"></div>
-                <div class="product-31" id="scroll_product"></div>
-                <div class="product-32" id="scroll_product"></div>
-                <div class="product-33" id="scroll_product"></div>
-                <div class="product-34" id="scroll_product"></div>
-                <div class="product-35" id="scroll_product"></div>
-                <div class="product-36" id="scroll_product"></div>
-                <div class="product-37" id="scroll_product"></div>
-                <button class="scroll_button_left">
-                  <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button class="scroll_button_right">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </button>
+              <div class="main_scroll_box" id="main_box1">
+                <img src="img/product28.jpg" alt="" id="scroll_product" />
+                <img src="img/product29.jpg" alt="" id="scroll_product" />
+                <img src="img/product30.jpg" alt="" id="scroll_product" />
+                <img src="img/product31.jpg" alt="" id="scroll_product" />
+                <img src="img/product32.jpg" alt="" id="scroll_product" />
+                <img src="img/product33.jpg" alt="" id="scroll_product" />
+                <img src="img/product34.jpg" alt="" id="scroll_product" />
+                <img src="img/product35.jpg" alt="" id="scroll_product" />
+                <img src="img/product36.jpg" alt="" id="scroll_product" />
+                <img src="img/product37.jpg" alt="" id="scroll_product" />
               </div>
+              <button class="scroll_button_left" id="first_left">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="scroll_button_right" id="first_right">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
             </div>
           </div>
         </div>
-        <div class="scroll_bar" id="Scroll-2">
+        <div class="scroll_bar">
           <div class="main_scroll_bar">
-            <h2 class="item_heading-2">Most wished for in Movies & TV</h2>
+            <h2 class="item_heading-1">Most wished for in Movies & TV</h2>
             <div class="scroll_box">
-              <div class="main_scroll_box">
-                <div class="product-38" id="scroll_product"></div>
-                <div class="product-39" id="scroll_product"></div>
-                <div class="product-40" id="scroll_product"></div>
-                <div class="product-41" id="scroll_product"></div>
-                <div class="product-42" id="scroll_product"></div>
-                <div class="product-43" id="scroll_product"></div>
-                <div class="product-44" id="scroll_product"></div>
-                <div class="product-45" id="scroll_product"></div>
-                <div class="product-46" id="scroll_product"></div>
-                <div class="product-47" id="scroll_product"></div>
-                <button class="scroll_button_left">
-                  <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button class="scroll_button_right">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </button>
+              <div class="main_scroll_box" id="main_box2">
+                <img src="img/product38.jpg" alt="" id="scroll_product" />
+                <img src="img/product39.jpg" alt="" id="scroll_product" />
+                <img src="img/product40.jpg" alt="" id="scroll_product" />
+                <img src="img/product41.jpg" alt="" id="scroll_product" />
+                <img src="img/product42.jpg" alt="" id="scroll_product" />
+                <img src="img/product43.jpg" alt="" id="scroll_product" />
+                <img src="img/product44.jpg" alt="" id="scroll_product" />
+                <img src="img/product45.jpg" alt="" id="scroll_product" />
+                <img src="img/product46.jpg" alt="" id="scroll_product" />
+                <img src="img/product47.jpg" alt="" id="scroll_product" />
               </div>
+              <button class="scroll_button_left" id="second_left">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="scroll_button_right" id="second_right">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </main>
     <footer class="footer">
+      <div class="change_lang_foot"></div>
       <div class="box-7">
         <div class="recommendations">
           <p class="recommen">See personalized recommendations</p>
@@ -484,14 +628,61 @@
         </div>
         <div class="info_us">
           <div class="information">
+            <div class="popup-3">
+              <div class="pop_main">
+                <div class="Change_lan">
+                  <p>Change language</p>
+                  <a href="" class="learn_more">Learn more</a>
+                </div>
+                <div class="lan_option">
+                  <label for="lan" class="lan">
+                    <input type="radio" value="EN" name="lan" id="lan" />
+                    English - EN
+                  </label>
+                  <div id="hori_line"></div>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="ES" name="lan" id="lan" />
+                    español - ES
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="AR" name="lan" id="lan" />
+                    العربية - AR
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="DE" name="lan" id="lan" />
+                    Deutsch - DE
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="HE" name="lan" id="lan" />
+                    עברית- HE
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="KO" name="lan" id="lan" />
+                    한국어 -KO
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="PT" name="lan" id="lan" />
+                    português - PT
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="ZH" name="lan" id="lan" />
+                    中文 (简体) - ZH
+                  </label>
+                  <label for="lan" class="lan">
+                    <input type="radio" value="ZH" name="lan" id="lan" />
+                    中文 (繁體) - ZH
+                  </label>
+                </div>
+              </div>
+              <div class="popup_d popup_lan2"></div>
+            </div>
             <div class="info_amazon_logo"></div>
             <div class="lan_select">
               <div class="globe">
                 <i class="fa-solid fa-globe"></i>
               </div>
-              <select name="" class="info_lan">
-                <option value="English">English</option>
-              </select>
+              <div class="info_lan">English</div>
+              <i class="fa-solid fa-caret-down"></i>
             </div>
             <div class="currency">
               <p class="dollar">$</p>
@@ -515,5 +706,7 @@
         </div>
       </div>
     </footer>
+    <script src="Contry_Names.js"></script>
+    <script src="amazon.js"></script>
   </body>
 </html>
