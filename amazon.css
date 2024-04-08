@@ -11,6 +11,104 @@ body {
   display: flex;
   flex-direction: column;
 }
+.popup-4 {
+  height: 100vh;
+  width: 365px;
+  display: none;
+  z-index: 3;
+  position: absolute;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+  animation: Slider 1s ease-in 0s 1 normal;
+}
+.pop4_heading {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #232f3e;
+}
+#pop4_main_head {
+  margin-left: 15px;
+  margin-right: 100px;
+}
+.pop4_scroll_box {
+  height: calc(100% - 50px);
+  width: 365px;
+  overflow-y: scroll;
+  padding-right: 15px 0px 50px 0;
+}
+.pop4_sub_head {
+  width: 335px;
+  text-align: left;
+  padding: 20px 0 10px 30px;
+}
+#pop4_hor_line {
+  width: 345px;
+  border: 0.5px solid #e3e5e5;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.pop4_para {
+  width: 315px;
+  height: 42px;
+  padding-left: 30px;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.pop4_para_lan {
+  justify-content: left;
+}
+.pop4_main_para {
+  margin-left: 10px;
+}
+.pop4_icon {
+  padding-right: 20px;
+}
+.pop4_para:hover {
+  background-color: #eaeded;
+}
+.pop4_Showmore {
+  justify-content: left;
+}
+#pop4_seeall {
+  margin-right: 10px;
+}
+@keyframes Slider {
+  0% {
+    left: -365px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.pop4_background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.close_menu {
+  height: 30px;
+  width: 30px;
+  top: 10px;
+  left: 375px;
+  z-index: 3;
+  color: white;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
 .navbar {
   height: 100px;
   width: 100%;
@@ -725,6 +823,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .menu {
   margin-left: 5px;
@@ -744,6 +843,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 .service {
   width: 128px;
@@ -751,6 +851,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 0.85rem;
+  cursor: pointer;
 }
 .registry {
   width: 70px;
@@ -758,6 +859,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 0.85rem;
+  cursor: pointer;
 }
 .gift_card {
   width: 80px;
@@ -765,6 +867,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 0.85rem;
+  cursor: pointer;
 }
 .sell {
   width: 41px;
@@ -772,6 +875,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 0.85rem;
+  cursor: pointer;
 }
 
 .deals:hover {

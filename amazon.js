@@ -40,6 +40,10 @@ let InfoLan = document.querySelector(".info_lan");
 let BackLeft = document.querySelector(".back_left");
 let BackRight = document.querySelector(".back_right");
 let BackGroundImage = document.querySelector(".background_image");
+let MenuIcon = document.querySelector(".menu_icon");
+let Popup4 = document.querySelector(".popup-4");
+let Pop4Background = document.querySelector(".pop4_background");
+let CloseMenu = document.querySelector(".close_menu");
 
 All.addEventListener("click", () => {
   All.style.border = "3px solid rgb(242, 155, 5)";
@@ -236,7 +240,7 @@ SecondRight.addEventListener("click", () => {
     x2 += 300;
   }
 });
-let j = 0;
+let j = 1;
 BackRight.addEventListener("click", () => {
   if (j >= 6) {
     j = 0;
@@ -260,4 +264,22 @@ BackLeft.addEventListener("click", () => {
     BackGroundImage.scrollTo(xcoordinate, 0);
     j--;
   }
+});
+MenuIcon.addEventListener("click", () => {
+  Popup4.style.display = "flex";
+  Pop4Background.style.display = "flex";
+  Body.style.overflow = "hidden";
+  setTimeout(() => {
+    CloseMenu.style.display = "flex";
+  }, 1000);
+});
+Pop4Background.addEventListener("click", () => {
+  Popup4.style.display = "none";
+  Pop4Background.style.display = "none";
+  CloseMenu.style.display = "none";
+});
+CloseMenu.addEventListener("click", () => {
+  Popup4.style.display = "none";
+  Pop4Background.style.display = "none";
+  CloseMenu.style.display = "none";
 });
