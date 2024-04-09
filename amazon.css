@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   background-color: white;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
-  animation: Slider 1s ease-in 0s 1 normal;
+  animation: Slider 0.5s ease-in 0s 1 normal;
 }
 .pop4_heading {
   height: 50px;
@@ -51,6 +51,13 @@ body {
   border: 0.5px solid #e3e5e5;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+.pop4_more_hor {
+  width: 315px;
+  border: 0.5px solid #e3e5e5;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 30px;
 }
 .pop4_para {
   width: 315px;
@@ -89,6 +96,14 @@ body {
   100% {
     left: 0;
   }
+}
+.more_para2 {
+  display: none;
+  flex-direction: column;
+}
+.more_para1 {
+  display: none;
+  flex-direction: column;
 }
 .pop4_background {
   width: 100vw;
@@ -169,22 +184,26 @@ body {
 
 .nav-address {
   height: 50px;
-  width: 90px;
+  /* width: 90px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 10px;
+  padding-right: 10px;
   cursor: pointer;
 }
 .add-first {
+  min-width: 48px;
   font-size: 0.7rem;
   margin-left: 12px;
+  display: flex;
+  flex-wrap: none;
 }
 .add-icon {
   display: flex;
 }
 .add-second {
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .change_Add {
@@ -1344,6 +1363,7 @@ body {
   position: relative;
   overflow-x: scroll;
   gap: 20px;
+  scroll-behavior: smooth;
 }
 .scroll_button_left {
   height: 100px;

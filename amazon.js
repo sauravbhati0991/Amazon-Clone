@@ -44,6 +44,12 @@ let MenuIcon = document.querySelector(".menu_icon");
 let Popup4 = document.querySelector(".popup-4");
 let Pop4Background = document.querySelector(".pop4_background");
 let CloseMenu = document.querySelector(".close_menu");
+let MorePara1 = document.querySelector(".more_para1");
+let SeeAll1 = document.querySelector(".see_all1");
+let SeeAll2 = document.querySelector(".see_all2");
+let SeeLess1 = document.querySelector(".see_less1");
+let SeeLess2 = document.querySelector(".see_less2");
+let MorePara2 = document.querySelector(".more_para2");
 
 All.addEventListener("click", () => {
   All.style.border = "3px solid rgb(242, 155, 5)";
@@ -240,29 +246,18 @@ SecondRight.addEventListener("click", () => {
     x2 += 300;
   }
 });
-let j = 1;
 BackRight.addEventListener("click", () => {
-  if (j >= 6) {
-    j = 0;
-    let xcoordinate = j * 1520;
-    BackGroundImage.scrollTo(xcoordinate, 0);
-    j++;
+  if (BackGroundImage.scrollLeft >= 7600) {
+    BackGroundImage.scrollLeft = -7600;
   } else {
-    let xcoordinate = j * 1520;
-    BackGroundImage.scrollTo(xcoordinate, 0);
-    j++;
+    BackGroundImage.scrollLeft += 1521;
   }
 });
 BackLeft.addEventListener("click", () => {
-  if (j < 0) {
-    j = 5;
-    let xcoordinate = j * 1520;
-    BackGroundImage.scrollTo(xcoordinate, 0);
-    j--;
+  if (BackGroundImage.scrollLeft <= 0) {
+    BackGroundImage.scrollLeft = 7603;
   } else {
-    let xcoordinate = j * 1520;
-    BackGroundImage.scrollTo(xcoordinate, 0);
-    j--;
+    BackGroundImage.scrollLeft -= 1521;
   }
 });
 MenuIcon.addEventListener("click", () => {
@@ -271,15 +266,33 @@ MenuIcon.addEventListener("click", () => {
   Body.style.overflow = "hidden";
   setTimeout(() => {
     CloseMenu.style.display = "flex";
-  }, 1000);
+  }, 500);
 });
 Pop4Background.addEventListener("click", () => {
   Popup4.style.display = "none";
   Pop4Background.style.display = "none";
   CloseMenu.style.display = "none";
+  Body.style.overflowY = "auto";
 });
 CloseMenu.addEventListener("click", () => {
   Popup4.style.display = "none";
   Pop4Background.style.display = "none";
   CloseMenu.style.display = "none";
+  Body.style.overflowY = "auto";
+});
+SeeAll1.addEventListener("click", () => {
+  SeeAll1.style.display = "none";
+  MorePara1.style.display = "flex";
+});
+SeeLess1.addEventListener("click", () => {
+  SeeAll1.style.display = "flex";
+  MorePara1.style.display = "none";
+});
+SeeAll2.addEventListener("click", () => {
+  SeeAll2.style.display = "none";
+  MorePara2.style.display = "flex";
+});
+SeeLess2.addEventListener("click", () => {
+  SeeAll2.style.display = "flex";
+  MorePara2.style.display = "none";
 });
