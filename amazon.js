@@ -50,12 +50,49 @@ let SeeAll2 = document.querySelector(".see_all2");
 let SeeLess1 = document.querySelector(".see_less1");
 let SeeLess2 = document.querySelector(".see_less2");
 let MorePara2 = document.querySelector(".more_para2");
+let Popup = document.querySelector(".popup");
 
+for (let i = 1; i < 6000; i++) {
+  setTimeout(() => {
+    const total_width = BackGroundImage.clientWidth;
+    const total_width4 = 4 * total_width;
+    if (BackGroundImage.scrollLeft >= total_width4) {
+      BackGroundImage.scrollLeft = 0;
+      BackLeft.disabled = true;
+      setTimeout(function () {
+        BackLeft.disabled = false;
+      }, 1000);
+      BackRight.disabled = true;
+      setTimeout(function () {
+        BackRight.disabled = false;
+      }, 1000);
+    } else {
+      BackGroundImage.scrollLeft += BackGroundImage.clientWidth;
+      BackLeft.disabled = true;
+      setTimeout(function () {
+        BackLeft.disabled = false;
+      }, 1000);
+      BackRight.disabled = true;
+      setTimeout(function () {
+        BackRight.disabled = false;
+      }, 1000);
+    }
+  }, 7000 * i);
+}
 All.addEventListener("click", () => {
   All.style.border = "3px solid rgb(242, 155, 5)";
 });
 SearchButton.addEventListener("click", () => {
-  SearchButton.style.border = "3px solid rgb(242, 155, 5)";
+  Popup.style.display = "none";
+  console.log(SearchBar.value);
+  if (SearchBar.value != "") {
+    window.location.href =
+      "https://www.amazon.com/s?k=" +
+      SearchBar.value +
+      "&crid=1L8DGYJRBMLGA&sprefix=" +
+      SearchBar.value +
+      "%2Caps%2C1145&ref=nb_sb_noss_2";
+  }
 });
 const RemoveNavBorder = () => {
   NavSearch.style.border = "none";
@@ -246,18 +283,38 @@ SecondRight.addEventListener("click", () => {
     x2 += 300;
   }
 });
+const total_width = BackGroundImage.clientWidth;
+const total_width4 = 4 * total_width;
+const total_width6 = 6 * total_width;
 BackRight.addEventListener("click", () => {
-  if (BackGroundImage.scrollLeft >= 7600) {
-    BackGroundImage.scrollLeft = -7600;
+  console.log("dskufhadwioh");
+  if (BackGroundImage.scrollLeft >= total_width4) {
+    BackGroundImage.scrollLeft = 0;
+    BackRight.disabled = true;
+    setTimeout(function () {
+      BackRight.disabled = false;
+    }, 1000);
   } else {
-    BackGroundImage.scrollLeft += 1521;
+    BackGroundImage.scrollLeft += BackGroundImage.clientWidth;
+    BackRight.disabled = true;
+    setTimeout(function () {
+      BackRight.disabled = false;
+    }, 1000);
   }
 });
 BackLeft.addEventListener("click", () => {
   if (BackGroundImage.scrollLeft <= 0) {
-    BackGroundImage.scrollLeft = 7603;
+    BackGroundImage.scrollLeft = total_width6;
+    BackLeft.disabled = true;
+    setTimeout(function () {
+      BackLeft.disabled = false;
+    }, 1000);
   } else {
-    BackGroundImage.scrollLeft -= 1521;
+    BackGroundImage.scrollLeft -= BackGroundImage.clientWidth;
+    BackLeft.disabled = true;
+    setTimeout(function () {
+      BackLeft.disabled = false;
+    }, 1000);
   }
 });
 MenuIcon.addEventListener("click", () => {
